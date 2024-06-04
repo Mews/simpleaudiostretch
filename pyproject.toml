@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simpleaudiostretch"
+version = "0.1.0"
+authors = [
+  { name="Mews", email="tiraraspas@gmail.com" },
+]
+description = "A small package to stretch audio"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "soundfile",
+  "numpy",
+]
+keywords = ["audio", "speed", "stretch", "wav", "mp3"]
+
+[project.urls]
+Homepage = "https://github.com/Mews/simpleaudiostretch"
+Issues = "https://github.com/Mews/simpleaudiostretch/issues"
