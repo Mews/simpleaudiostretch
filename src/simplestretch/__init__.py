@@ -1,8 +1,8 @@
 import soundfile
 from numpy import ndarray
-from typing import Optional, Union
+from typing import Optional, Union, Tuple
 
-def stretch_audio(audio:Union[str, ndarray], factor:float, samplerate:Optional[int] = None, output:Optional[str] = None):
+def stretch_audio(audio:Union[str, ndarray], factor:float, samplerate:Optional[int] = None, output:Optional[str] = None) -> Tuple[ndarray, int]:
     #If a file path is provided, load it as a ndarray using soundfile
     if isinstance(audio, str):
         audio, samplerate = soundfile.read("song.mp3")
