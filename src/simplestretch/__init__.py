@@ -38,7 +38,7 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
     #If a file path is provided, load it as a ndarray using soundfile
     if isinstance(audio, str):
-        audio, samplerate = soundfile.read("song.mp3")
+        audio, samplerate = soundfile.read(audio)
     
     stretched_samplerate = round(samplerate/factor)
 
