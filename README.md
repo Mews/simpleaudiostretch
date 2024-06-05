@@ -10,8 +10,10 @@ You can install the package by running the command\
 ##  Features
 
 - Supports many different audio formats, including mp3, wav, and also raw audio data in the form of numpy ndarrays.
-- Its incredibly fast, especially when working with raw audio data.
+- Its incredibly fast when working with raw audio data.
 ## Usage/Examples
+
+**The full documentation for this package can be found [here](https://simpleaudiostretch.readthedocs.io/en/latest/simplestretch.html)**.
 
 This is an example on how you might use this library\
 In this example we take a file called `song.mp3` and make it twice as long:
