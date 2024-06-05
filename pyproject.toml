@@ -20,7 +20,7 @@ dependencies = [
   "soundfile",
   "numpy",
 ]
-keywords = ["audio", "speed", "stretch", "wav", "mp3"]
+keywords = ["audio", "speed", "stretch", "wav", "mp3", "sound"]
 
 [project.urls]
 Homepage = "https://github.com/Mews/simpleaudiostretch"
