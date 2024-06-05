@@ -55,7 +55,7 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
 def speedup_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] = None, samplerate:Optional[int] = None) -> Tuple[ndarray, int]:
     """This function is used to change an audio's speed by a certain factor.\n
-    Because this function doesn't apply any resampling or similar algorithms, for very high factors (around 5 or higher) the audio quality might decrease noticeably.
+    Because this function doesn't apply any resampling or similar algorithms, for very low factors (around 0.2 or lower) the audio quality might decrease noticeably.
 
     :param audio: The audio to be sped up or down.\n
                   You can provide either a path to a file containing your audio, or the raw sound data as a numpy ndarray.
