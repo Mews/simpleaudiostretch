@@ -5,6 +5,9 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/simplestretch"]
 
+[project.scripts]
+simplestretch = "simplestretch.cli:main"
+
 [project]
 name = "simpleaudiostretch"
 version = "0.1.0"
