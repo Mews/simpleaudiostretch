@@ -31,7 +31,10 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
 
 def speedup_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] = None, samplerate:Optional[int] = None) -> Tuple[ndarray, int]:
+
+    #Type checks
     if factor <= 0:
         raise ValueError("\'factor\' must be greater than 0")
 
-    stretch_audio(audio=audio, factor=1/factor, output=output, samplerate=samplerate)
+    #Stretch audio to match the specified speedup factor
+    return stretch_audio(audio=audio, factor=1/factor, output=output, samplerate=samplerate)
