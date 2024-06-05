@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>simplestretch package &mdash; simpleaudiostretch 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=01f34227"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            simpleaudiostretch
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">simplestretch package</a><ul>
+<li><a class="reference internal" href="#module-simplestretch">Module contents</a><ul>
+<li><a class="reference internal" href="#simplestretch.speedup_audio"><code class="docutils literal notranslate"><span class="pre">speedup_audio()</span></code></a></li>
+<li><a class="reference internal" href="#simplestretch.stretch_audio"><code class="docutils literal notranslate"><span class="pre">stretch_audio()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">simpleaudiostretch</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">simplestretch package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/simplestretch.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="simplestretch-package">
+<h1>simplestretch package<a class="headerlink" href="#simplestretch-package" title="Link to this heading"></a></h1>
+<section id="module-simplestretch">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-simplestretch" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="simplestretch.speedup_audio">
+<span class="sig-prename descclassname"><span class="pre">simplestretch.</span></span><span class="sig-name descname"><span class="pre">speedup_audio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">audio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samplerate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#simplestretch.speedup_audio" title="Link to this definition"></a></dt>
+<dd><p>This function is used to change an audio’s speed by a certain factor.</p>
+<p>Because this function doesn’t apply any resampling or similar algorithms, for very high factors (around 5 or higher) the audio quality might decrease noticeably.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>audio</strong> (<em>str</em><em> | </em><em>numpy.ndarray</em>) – <p>The audio to be sped up or down.</p>
+<p>You can provide either a path to a file containing your audio, or the raw sound data as a numpy ndarray.</p>
+</p></li>
+<li><p><strong>factor</strong> (<em>float</em>) – <p>This is the factor by which the speed of the audio will be changed.</p>
+<p>For example, a factor of 2 will make the audio twice as fast, and a factor of 0.5 will make the audio half as fast.</p>
+</p></li>
+<li><p><strong>output</strong> (<em>str</em><em>, </em><em>optional</em>) – <p>This is the path to which the sped up audio will be saved.</p>
+<p>If no argument is passed, it wont save the audio to a file.</p>
+</p></li>
+<li><p><strong>samplerate</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>The sample rate of the original audio</p>
+<p>You only need to pass this argument if you’ve provided a numpy ndarray as the audio. Otherwise, it will be determined automatically.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>A tuple containing the sped up audio data and sample rate.</p>
+<p>This is returned whether or not the audio gets saved to a file.</p>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[ndarray, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="simplestretch.stretch_audio">
+<span class="sig-prename descclassname"><span class="pre">simplestretch.</span></span><span class="sig-name descname"><span class="pre">stretch_audio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">audio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samplerate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#simplestretch.stretch_audio" title="Link to this definition"></a></dt>
+<dd><p>This function is used to stretch an audio’s length by a certain factor.</p>
+<p>Because this function doesn’t apply any resampling or similar algorithms, for very high factors (around 5 or higher) the audio quality might decrease noticeably.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>audio</strong> (<em>str</em><em> | </em><em>numpy.ndarray</em>) – <p>The audio to be stretched.</p>
+<p>You can provide either a path to a file containing your audio, or the raw sound data as a numpy ndarray.</p>
+</p></li>
+<li><p><strong>factor</strong> (<em>float</em>) – <p>This is the factor by which the length of the audio will be changed.</p>
+<p>For example, a factor of 2 will make the audio twice as long, and a factor of 0.5 will make the audio half as long.</p>
+</p></li>
+<li><p><strong>output</strong> (<em>str</em><em>, </em><em>optional</em>) – <p>This is the path to which the stretched audio will be saved.</p>
+<p>If no argument is passed, it wont save the audio to a file.</p>
+</p></li>
+<li><p><strong>samplerate</strong> (<em>int</em><em>, </em><em>optional</em>) – <p>The sample rate of the original audio</p>
+<p>You only need to pass this argument if you’ve provided a numpy ndarray as the audio. Otherwise, it will be determined automatically.</p>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>A tuple containing the stretched audio data and sample rate.</p>
+<p>This is returned whether or not the audio gets saved to a file.</p>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[ndarray, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Mews.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
