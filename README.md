@@ -5,12 +5,11 @@ A simple python package to stretch audio files and change their speed.
 
 ## Installation
 
-You can install the package by running the command\
-`pip install simpleaudiostretch`
+You can install the package by running the command `pip install simpleaudiostretch`
 ##  Features
 
 - Supports many different audio formats, including mp3, wav, and also raw audio data in the form of numpy ndarrays.
-- Its incredibly fast when working with raw audio data.
+- Its incredibly fast, especially when working with raw audio data.
 ## Usage/Examples
 
 **The full documentation for this package can be found [here](https://simpleaudiostretch.readthedocs.io/en/latest/simplestretch.html)**.
