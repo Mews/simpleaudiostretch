@@ -10,7 +10,7 @@ You can install the package by running the command\
 ##  Features
 
 - Supports many different audio formats, including mp3, wav, and also raw audio data in the form of numpy ndarrays.
-- Its incredibly fast when working with raw audio data.
+- Its incredibly fast, especially when working with raw audio data.
 ## Usage/Examples
 
 This is an example on how you might use this library\
