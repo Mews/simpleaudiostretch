@@ -18,7 +18,7 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
         If no argument is passed, it wont save the audio to a file.
     :type output: str, optional
 
-    :param samplerate: The sample rate of the original audio\n
+    :param samplerate: The sample rate of the original audio.\n
         You only need to pass this argument if you've provided a numpy ndarray as the audio. Otherwise, it will be determined automatically.
     :type samplerate: int, optional
 
@@ -69,7 +69,7 @@ def speedup_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
         If no argument is passed, it wont save the audio to a file.
     :type output: str, optional
 
-    :param samplerate: The sample rate of the original audio\n
+    :param samplerate: The sample rate of the original audio.\n
         You only need to pass this argument if you've provided a numpy ndarray as the audio. Otherwise, it will be determined automatically.
     :type samplerate: int, optional
 
