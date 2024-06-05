@@ -1,6 +1,6 @@
 #Tell sphinx and rtd where to find source code
 import sys, pathlib
-sys.path.append((pathlib.Path(__file__).parent.parent.parent / "src/simplestretch").resolve().as_posix())
+sys.path.append((pathlib.Path(__file__).parent.parent.parent / "src").resolve().as_posix())
 
 # Configuration file for the Sphinx documentation builder.
 #
