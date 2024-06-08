@@ -1,5 +1,6 @@
 
 # simpleaudiostretch
+![Tests badge](https://github.com/Mews/simpleaudiostretch/actions/workflows/run_tests.yml/badge.svg)
 
 A simple python package to stretch audio files and change their speed.
 
