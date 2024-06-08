@@ -3,6 +3,7 @@
 [![Tests badge](https://github.com/Mews/simpleaudiostretch/actions/workflows/run_tests.yml/badge.svg)](https://github.com/Mews/simpleaudiostretch/actions/workflows/run_tests.yml)
 [![Coverage badge](https://raw.githubusercontent.com/Mews/simpleaudiostretch/python-coverage-comment-action-data/badge.svg)](https://htmlpreview.github.io/?https://github.com/Mews/simpleaudiostretch/blob/python-coverage-comment-action-data/htmlcov/index.html)
 ![Documentation badge](https://readthedocs.org/projects/simpleaudiostretch/badge/?version=latest&style=flat-default)
+[![PyPI Version](https://badge.fury.io/py/simpleaudiostretch.svg)](https://pypi.python.org/pypi/simpleaudiostretch)
 
 A simple python package to stretch audio files and change their speed.
 
