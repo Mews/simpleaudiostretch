@@ -1,3 +1,2 @@
 [run]
 relative_files = true
-include = src/*
