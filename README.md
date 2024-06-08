@@ -25,7 +25,7 @@ In this example we take a file called `song.mp3` and make it twice as long:
 ```python
 import simplestretch
 
-#A factor of 2 means the song becomes twice as long
+# A factor of 2 means the song becomes twice as long
 simplestretch.stretch_audio("song.mp3", 2, "out.wav")
 ```
 
@@ -37,8 +37,8 @@ import simplestretch, soundfile
 # But you can use any numpy ndarray representing audio
 audio_data, samplerate = soundfile.read("song.mp3")
 
-#When working with raw audio data
-#You will also need to pass the audio's sample rate to the function
+# When working with raw audio data
+# You will also need to pass the audio's sample rate to the function
 simplestretch.stretch_audio(audio_data, 2, output="out.wav", samplerate=samplerate)
 ```
 
@@ -46,7 +46,7 @@ You can also work with changes in speed rather than changes in length through th
 ```python
 import simplestretch
 
-#In this example we make the song twice as fast rather than twice as long
+# In this example we make the song twice as fast rather than twice as long
 simplestretch.speedup_audio("song.mp3", 2, "out.wav")
 ```
 ## CLI
