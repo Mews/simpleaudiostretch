@@ -109,6 +109,3 @@ def speedup_audio(
     return stretch_audio(
         audio=audio, factor=1 / factor, output=output, samplerate=samplerate
     )
-
-
-stretch_audio(audio="song.mp3", factor=0.5, output="out.mp3")
