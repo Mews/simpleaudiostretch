@@ -63,7 +63,8 @@ def stretch_audio(
             # Delete invalid file
             pathlib.Path(output).unlink()
 
-            exc.add_note("(Try saving it as a .wav file instead)")
+            exc.prefix += "\n(Try saving it as a .wav file instead)\n"
+
             raise exc
 
     return (audio, stretched_samplerate)
@@ -108,3 +109,6 @@ def speedup_audio(
     return stretch_audio(
         audio=audio, factor=1 / factor, output=output, samplerate=samplerate
     )
+
+
+stretch_audio(audio="song.mp3", factor=0.5, output="out.mp3")
