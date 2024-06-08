@@ -61,7 +61,7 @@ def stretch_audio(
             soundfile.write(output, audio, samplerate=stretched_samplerate)
         except soundfile.LibsndfileError as exc:
             # Delete invalid file
-            pathlib.Path.unlink(output)
+            pathlib.Path(output).unlink()
 
             exc.add_note("(Try saving it as a .wav file instead)")
             raise exc
