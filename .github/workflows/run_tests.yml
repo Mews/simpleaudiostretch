@@ -8,6 +8,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    - cron: '0 0 * * *' # Run at 12:00 AM every day
 
 permissions:
   contents: write
@@ -19,7 +21,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Set up Python 3.10
       uses: actions/setup-python@v5
       with:
