@@ -28,7 +28,7 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
     """
 
-    #Type checks
+    # Type checks
     if not (isinstance(audio, str) or isinstance(audio, ndarray)):
         raise TypeError("\'audio\' must be the path to a audio file or a numpy ndarray")
 
@@ -36,7 +36,7 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
         raise ValueError("\'factor\' must be greater than 0")
 
 
-    #If a file path is provided, load it as a ndarray using soundfile
+    # If a file path is provided, load it as a ndarray using soundfile
     if isinstance(audio, str):
         audio, samplerate = soundfile.read(audio)
     
@@ -79,9 +79,9 @@ def speedup_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
     """
 
-    #Type checks
+    # Type checks
     if factor <= 0:
         raise ValueError("\'factor\' must be greater than 0")
 
-    #Stretch audio to match the specified speedup factor
+    # Stretch audio to match the specified speedup factor
     return stretch_audio(audio=audio, factor=1/factor, output=output, samplerate=samplerate)
