@@ -9,7 +9,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -29,4 +29,9 @@ jobs:
         pip install -r requirements.txt
     - name: Run tests
       run: |
-        python tests/test.py
+        coverage run -m unittest tests/test.py
+    - name: Coverage comment
+        id: coverage_comment
+        uses: py-cov-action/python-coverage-comment-action@v3
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
