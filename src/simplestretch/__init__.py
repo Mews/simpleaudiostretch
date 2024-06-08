@@ -3,7 +3,7 @@ from typing import Optional, Tuple, Union
 import soundfile
 from numpy import ndarray
 
-error
+
 
 def stretch_audio(
     audio: Union[str, ndarray],
