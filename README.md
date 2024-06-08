@@ -4,10 +4,10 @@
 
 | Name                              |    Stmts |     Miss |   Cover |   Missing |
 |---------------------------------- | -------: | -------: | ------: | --------: |
-| src/simplestretch/\_\_init\_\_.py |       22 |        6 |     73% |41, 44, 55-57, 95 |
+| src/simplestretch/\_\_init\_\_.py |       24 |        7 |     71% |41, 44, 47, 59-61, 99 |
 | tests/\_\_init\_\_.py             |        0 |        0 |    100% |           |
 | tests/test.py                     |       71 |        0 |    100% |           |
-|                         **TOTAL** |   **93** |    **6** | **94%** |           |
+|                         **TOTAL** |   **95** |    **7** | **93%** |           |
 
 
 ## Setup coverage badge
