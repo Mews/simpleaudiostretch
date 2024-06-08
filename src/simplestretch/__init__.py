@@ -42,6 +42,10 @@ def stretch_audio(
 
     if factor <= 0:
         raise ValueError("'factor' must be greater than 0")
+    
+    if isinstance(audio, ndarray) and not isinstance(samplerate, int):
+        raise TypeError(f"You must provide a valid sample rate when working with raw audio data (Not {type(samplerate)})")
+        
 
     # If a file path is provided, load it as a ndarray using soundfile
     if isinstance(audio, str):
