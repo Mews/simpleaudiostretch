@@ -1,8 +1,15 @@
+from typing import Optional, Tuple, Union
+
 import soundfile
 from numpy import ndarray
-from typing import Optional, Union, Tuple
 
-def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] = None, samplerate:Optional[int] = None) -> Tuple[ndarray, int]:
+
+def stretch_audio(
+    audio: Union[str, ndarray],
+    factor: float,
+    output: Optional[str] = None,
+    samplerate: Optional[int] = None,
+) -> Tuple[ndarray, int]:
     """This function is used to stretch an audio's length by a certain factor.
     Because this function doesn't apply any resampling or similar algorithms, for very high factors (around 5 or higher) the audio quality might decrease noticeably.
 
@@ -30,17 +37,16 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
     # Type checks
     if not (isinstance(audio, str) or isinstance(audio, ndarray)):
-        raise TypeError("\'audio\' must be the path to a audio file or a numpy ndarray")
+        raise TypeError("'audio' must be the path to a audio file or a numpy ndarray")
 
     if factor <= 0:
-        raise ValueError("\'factor\' must be greater than 0")
-
+        raise ValueError("'factor' must be greater than 0")
 
     # If a file path is provided, load it as a ndarray using soundfile
     if isinstance(audio, str):
         audio, samplerate = soundfile.read(audio)
-    
-    stretched_samplerate = round(samplerate/factor)
+
+    stretched_samplerate = round(samplerate / factor)
 
     if isinstance(output, str):
         try:
@@ -52,8 +58,12 @@ def stretch_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
     return (audio, stretched_samplerate)
 
 
-
-def speedup_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] = None, samplerate:Optional[int] = None) -> Tuple[ndarray, int]:
+def speedup_audio(
+    audio: Union[str, ndarray],
+    factor: float,
+    output: Optional[str] = None,
+    samplerate: Optional[int] = None,
+) -> Tuple[ndarray, int]:
     """This function is used to change an audio's speed by a certain factor.
     Because this function doesn't apply any resampling or similar algorithms, for very low factors (around 0.2 or lower) the audio quality might decrease noticeably.
 
@@ -81,7 +91,9 @@ def speedup_audio(audio:Union[str, ndarray], factor:float, output:Optional[str] 
 
     # Type checks
     if factor <= 0:
-        raise ValueError("\'factor\' must be greater than 0")
+        raise ValueError("'factor' must be greater than 0")
 
     # Stretch audio to match the specified speedup factor
-    return stretch_audio(audio=audio, factor=1/factor, output=output, samplerate=samplerate)
+    return stretch_audio(
+        audio=audio, factor=1 / factor, output=output, samplerate=samplerate
+    )
