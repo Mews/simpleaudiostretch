@@ -1,7 +1,7 @@
 # This workflow will setup python 3.10, install the dependencies in requirements.txt and run the tests in tests/test.py
 # It will then also create a coverage report
 
-name: Run tests
+name: Tests
 
 on:
   push:
