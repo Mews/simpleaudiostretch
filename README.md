@@ -2,12 +2,12 @@
 
 [Full report](https://htmlpreview.github.io/?https://github.com/Mews/simpleaudiostretch/blob/python-coverage-comment-action-data/htmlcov/index.html)
 
-| Name                              |    Stmts |     Miss |   Cover |   Missing |
-|---------------------------------- | -------: | -------: | ------: | --------: |
-| src/simplestretch/\_\_init\_\_.py |       29 |       11 |     62% |41, 44, 47-50, 62-67, 105 |
-| tests/\_\_init\_\_.py             |        0 |        0 |    100% |           |
-| tests/test.py                     |       71 |        0 |    100% |           |
-|                         **TOTAL** |  **100** |   **11** | **89%** |           |
+| Name                              |    Stmts |     Miss |    Cover |   Missing |
+|---------------------------------- | -------: | -------: | -------: | --------: |
+| src/simplestretch/\_\_init\_\_.py |       29 |        0 |     100% |           |
+| tests/\_\_init\_\_.py             |        0 |        0 |     100% |           |
+| tests/test.py                     |       98 |        0 |     100% |           |
+|                         **TOTAL** |  **127** |    **0** | **100%** |           |
 
 
 ## Setup coverage badge
