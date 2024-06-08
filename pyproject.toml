@@ -10,7 +10,7 @@ simplestretch = "simplestretch.cli:main"
 
 [project]
 name = "simpleaudiostretch"
-version = "0.2.1"
+version = "0.2.2"
 authors = [
   { name="Mews", email="tiraraspas@gmail.com" },
 ]
