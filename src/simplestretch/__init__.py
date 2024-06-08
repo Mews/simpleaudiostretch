@@ -2,7 +2,7 @@ from typing import Optional, Tuple, Union
 
 import soundfile
 from numpy import ndarray
-
+import pathlib
 
 
 def stretch_audio(
@@ -60,6 +60,9 @@ def stretch_audio(
         try:
             soundfile.write(output, audio, samplerate=stretched_samplerate)
         except soundfile.LibsndfileError as exc:
+            # Delete invalid file
+            pathlib.Path.unlink(output)
+
             exc.add_note("(Try saving it as a .wav file instead)")
             raise exc
 
