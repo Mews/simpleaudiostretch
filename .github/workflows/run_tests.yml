@@ -33,7 +33,7 @@ jobs:
 
     - name: Run tests
       run: |
-        coverage run -m unittest tests/test.py
+        coverage run -m unittest -v tests/test.py
 
     - name: Coverage comment
       id: coverage_comment
