@@ -11,7 +11,7 @@ on:
 
 jobs:
   call-run-python-tests:
-    uses: Mews/.github/workflows/run-python-tests.yaml@main
+    uses: Mews/.github/.github/run-python-tests.yaml@main
     with:
       python_versions: '["3.10", "3.11", "3.12"]'
       os_list: '["ubuntu-latest", "windows-latest"]'
