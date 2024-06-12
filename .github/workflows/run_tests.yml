@@ -34,7 +34,7 @@ jobs:
 
     - name: Run tests
       run: |
-        coverage run pytest -v tests
+        coverage run -m pytest -v tests
 
     - name: Coverage comment
       id: coverage_comment
