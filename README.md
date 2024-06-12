@@ -5,9 +5,9 @@
 | Name                              |    Stmts |     Miss |    Cover |   Missing |
 |---------------------------------- | -------: | -------: | -------: | --------: |
 | src/simplestretch/\_\_init\_\_.py |       29 |        0 |     100% |           |
-| tests/\_\_init\_\_.py             |        0 |        0 |     100% |           |
-| tests/test.py                     |       98 |        0 |     100% |           |
-|                         **TOTAL** |  **127** |    **0** | **100%** |           |
+| tests/test\_speedup.py            |       47 |        0 |     100% |           |
+| tests/test\_stretch.py            |       70 |        0 |     100% |           |
+|                         **TOTAL** |  **146** |    **0** | **100%** |           |
 
 
 ## Setup coverage badge
