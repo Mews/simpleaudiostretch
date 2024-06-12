@@ -11,6 +11,9 @@ on:
 
 jobs:
   call-run-python-tests:
+    permissions:
+      contents: write
+
     uses: Mews/.github/.github/workflows/run-python-tests.yaml@main
     with:
       python_versions: '["3.10", "3.11", "3.12"]'
