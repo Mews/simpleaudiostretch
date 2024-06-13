@@ -8,11 +8,14 @@ on:
 
 jobs:
   call-run-python-tests:
+    name: Run tests
 
     permissions:
       contents: write
 
     uses: Mews/.github/.github/workflows/run-python-tests.yaml@main
     with:
+      tests_dir: "tests/"
       python_versions: '["3.10", "3.12"]'
       os_list: '["ubuntu-latest", "windows-latest", "macos-latest"]'
+      create_coverage_comment: true
