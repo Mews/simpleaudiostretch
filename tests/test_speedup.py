@@ -14,6 +14,7 @@ import pathlib
 import numpy as np
 import pytest
 import soundfile
+
 from simplestretch import speedup_audio
 
 
@@ -34,7 +35,7 @@ class TestStretch:
         assert self.sine_audio.all() == spedup_audio.all()
 
         assert round(self.sine_samplerate / (1 / factor)) == spedup_samplerate
-    
+
     def test_speedup_audio_file_wav(self):
         factor = 2
         file = "tests/sample_files/440hz.wav"
@@ -46,7 +47,7 @@ class TestStretch:
         assert audio.all() == spedup_audio.all()
 
         assert round(samplerate / (1 / factor)) == spedup_samplerate
-    
+
     def test_speedup_audio_file_mp3(self):
         factor = 2
         file = "tests/sample_files/440hz.wav"
