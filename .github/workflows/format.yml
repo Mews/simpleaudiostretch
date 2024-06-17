@@ -10,5 +10,6 @@ jobs:
 
     permissions:
       contents: write
+      pull-requests: write
 
     uses: Mews/.github/.github/workflows/format-python.yaml@main
