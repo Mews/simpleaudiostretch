@@ -2,7 +2,7 @@
 # simpleaudiostretch
 [![Tests badge](https://github.com/Mews/simpleaudiostretch/actions/workflows/run_tests.yml/badge.svg)](https://github.com/Mews/simpleaudiostretch/actions/workflows/run_tests.yml)
 [![Coverage badge](https://raw.githubusercontent.com/Mews/simpleaudiostretch/python-coverage-comment-action-data/badge.svg)](https://htmlpreview.github.io/?https://github.com/Mews/simpleaudiostretch/blob/python-coverage-comment-action-data/htmlcov/index.html)
-[![Documentation badge](https://readthedocs.org/projects/simpleaudiostretch/badge/?version=latest&style=flat-default)](https://simpleaudiostretch.readthedocs.io/en/latest/simplestretch.html)
+[![Documentation badge](https://readthedocs.org/projects/simpleaudiostretch/badge/?version=latest&style=flat-default)](https://simpleaudiostretch.readthedocs.io/en/latest/index.html)
 [![PyPI Version](https://img.shields.io/pypi/v/simpleaudiostretch?label=pypi%20package)](https://pypi.python.org/pypi/simpleaudiostretch)
 [![PyPI Downloads](https://img.shields.io/pypi/dm/simpleaudiostretch)](https://pypi.python.org/pypi/simpleaudiostretch)
 
@@ -18,7 +18,7 @@ You can install the package by running the command `pip install simpleaudiostret
 - Its really fast, especially when working with raw audio data.
 ## Documentation
 
-The full documentation for this package can be found [here](https://simpleaudiostretch.readthedocs.io/en/latest/simplestretch.html).
+The full documentation for this package can be found [here](https://simpleaudiostretch.readthedocs.io/en/latest/index.html).
 # Usage/Examples
 ## Python
 This is an example on how you might use this library\
