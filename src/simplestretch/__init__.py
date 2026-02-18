@@ -17,15 +17,15 @@ def stretch_audio(
 
     Args:
         audio (Union[str, ndarray]): The audio to be stretched.
-            You can provide either a path to a file containing your audio, 
+            You can provide either a path to a file containing your audio,
             or the raw sound data as a numpy ndarray.
         factor (float): This is the factor by which the length of the audio will be changed.
-            For example, a factor of 2 will make the audio twice as long, 
+            For example, a factor of 2 will make the audio twice as long,
             and a factor of 0.5 will make the audio half as long.
         output (Optional[str], optional): This is the path to which the stretched audio will be saved.
             If no argument is passed, it wont save the audio to a file. Defaults to ``None``.
         samplerate (Optional[int], optional): The sample rate of the original audio.
-            You only need to pass this argument if you’ve provided a numpy ndarray as the audio. 
+            You only need to pass this argument if you’ve provided a numpy ndarray as the audio.
             Otherwise, it will be determined automatically. Defaults to ``None``.
 
     Raises:
@@ -86,15 +86,15 @@ def speedup_audio(
 
     Args:
         audio (Union[str, ndarray]): The audio to be sped up or down.
-            You can provide either a path to a file containing your audio, 
+            You can provide either a path to a file containing your audio,
             or the raw sound data as a numpy ndarray.
         factor (float): This is the factor by which the speed of the audio will be changed.
-            For example, a factor of 2 will make the audio twice as fast, 
+            For example, a factor of 2 will make the audio twice as fast,
             and a factor of 0.5 will make the audio half as fast.
         output (Optional[str], optional): This is the path to which the sped up audio will be saved.
             If no argument is passed, it wont save the audio to a file.. Defaults to ``None``.
         samplerate (Optional[int], optional): The sample rate of the original audio.
-            You only need to pass this argument if you've provided a numpy ndarray as the audio. 
+            You only need to pass this argument if you've provided a numpy ndarray as the audio.
             Otherwise, it will be determined automatically. Defaults to ``None``.
 
     Raises:
