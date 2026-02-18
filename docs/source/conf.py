@@ -23,7 +23,13 @@ release = "0.1.0"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 import sphinx_rtd_theme
 
-extensions = ["sphinx.ext.autodoc", "sphinx_rtd_theme", "sphinx.ext.autosummary", "sphinx.ext.napoleon", "myst_parser"]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx_rtd_theme",
+    "sphinx.ext.autosummary",
+    "sphinx.ext.napoleon",
+    "myst_parser",
+]
 
 templates_path = ["_templates"]
 exclude_patterns = []
