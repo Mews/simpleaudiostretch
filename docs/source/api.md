@@ -1,10 +1,8 @@
-simplestretch package
-=====================
+# simplestretch
 
-Module contents
----------------
-
+```{eval-rst}
 .. automodule:: simplestretch
    :members:
    :undoc-members:
    :show-inheritance:
+```
